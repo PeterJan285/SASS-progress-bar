@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+body {
+  width: 100%;
+  background: url(bg.jpg) no-repeat center/cover;
+  background-attachment: fixed;
+}
+
+.container {
+  padding: 50px 0px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 650px;
+  color: white;
+  gap: 2rem;
+  line-height: 30px;
+  text-align: center;
+}
+.text h1 {
+  font-size: 2.5rem;
+  line-height: 50px;
+}
+.text p {
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .skills {
+    width: 90%;
+  }
+}
+.skills h2 {
+  letter-spacing: 1px;
+  margin: 40px 0;
+  color: white;
+}
+
+.progress-bar {
+  background-color: darkgray;
+  width: 600px;
+  height: 15px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 768px) {
+  .progress-bar {
+    width: 100%;
+  }
+}
+.progress-bar div {
+  height: 15px;
+  border-radius: 10px;
+  width: 0%;
+}
+.progress-bar div span {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  float: right;
+  margin: -15px -20px 0 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+.progress-bar .yamaha {
+  background-color: #fde74c;
+  animation: yamaha 1.5s ease-in-out forwards;
+}
+.progress-bar .yamaha span {
+  border: 3px solid #fde74c;
+}
+@keyframes yamaha {
+  100% {
+    width: 42%;
+  }
+}
+.progress-bar .honda {
+  background-color: #d84654;
+  animation: honda 1.5s ease-in-out forwards;
+}
+.progress-bar .honda span {
+  border: 3px solid #d84654;
+}
+@keyframes honda {
+  100% {
+    width: 31%;
+  }
+}
+.progress-bar .ducati {
+  background-color: #3da1b8;
+  animation: ducati 1s linear forwards;
+}
+.progress-bar .ducati span {
+  border: 3px solid #3da1b8;
+}
+@keyframes ducati {
+  100% {
+    width: 17%;
+  }
+}
+.progress-bar .kawasaki {
+  background-color: #80D932;
+  animation: kawasaki 1s linear forwards;
+}
+.progress-bar .kawasaki span {
+  border: 3px solid #80D932;
+}
+@keyframes kawasaki {
+  100% {
+    width: 10%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
